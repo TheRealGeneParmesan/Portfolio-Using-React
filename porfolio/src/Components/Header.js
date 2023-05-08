@@ -5,27 +5,26 @@ function Header() {
         display: 'flex',
         justifyContent: 'space-between',
         padding: '1rem',
-        backgroundColor: '#95B8D1',
-        color: '#fff'
     };
 
     const logoStyle = {
-        fontSize: '1.5rem',
-        fontWeight: 'bold',
+        fontSize: '2rem',
         textDecoration: 'none',
-        color: '#fff'
+        color: '#9C95DC',
+        fontFamily: "Merriweather",
     };
 
     const navStyle = {
         display: 'flex',
         justifyContent: 'center',
-        fontWeight: 'bold'
+        fontFamily: "Merriweather",
+        fontSize: '1.5rem',
     };
 
     const linkStyle = {
         marginLeft: '2rem',
         textDecoration: 'none',
-        color: '#fff'
+        color: '#9C95DC',
     };
 
     return (

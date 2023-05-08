@@ -7,9 +7,9 @@ function Footer() {
         display: 'flex',
         justifyContent: 'center',
         padding: '1rem',
-        backgroundColor: '#95B8D1',
-        color: '#fff',
+        color: '#9C95DC',
         fontWeight: 'bold',
+        fontFamily: "Merriweather",
         textDecoration: 'none',
 
     }
