@@ -1,5 +1,6 @@
 import React from 'react';
-import CustomLogo from './Logo';
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 function Footer() {
     const footerStyle = {
@@ -14,11 +15,10 @@ function Footer() {
     }
     return (
         <footer style={footerStyle}>
-            <a href="#" style={footerStyle}>Home</a>
-            <a href="#" style={footerStyle}>Home</a>
-            <a href="#" style={footerStyle}>Home</a>
-            <a href="#" style={footerStyle}>Home</a>
-            <CustomLogo />
+            <a href="https://github.com/TheRealGeneParmesan" style={footerStyle}><BsGithub /></a>
+            <a href="https://www.linkedin.com/in/gene-parmesan-02b495266/" style={footerStyle}><BsLinkedin /></a>
+            <a href="https://musical-chairs.herokuapp.com/login" style={footerStyle}>Musical-Chairs-Full-Stack-App</a>
+            <a href="#" style={footerStyle}>Contact Me</a>
 
         </footer>
     )

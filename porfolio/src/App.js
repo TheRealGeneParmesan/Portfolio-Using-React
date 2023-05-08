@@ -4,7 +4,6 @@ import About from "./Components/AboutMe";
 // import Portfolio from "./Components/Portfolio";
 // import Project from "./Components/Project";
 import Footer from "./Components/Footer";
-import { BsGithub } from "react-icons/bs";
 
 function App() {
     return (
@@ -14,7 +13,6 @@ function App() {
             {/* <Portfolio />  */}
             {/* <Project /> */}
             <Footer />
-            <BsGithub />
         </main>
     );
 }
