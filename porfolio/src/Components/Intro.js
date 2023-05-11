@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoLogoJavascript } from "react-icons/io";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiCss3 } from "react-icons/si";
@@ -8,82 +8,126 @@ import { FaReact } from "react-icons/fa";
 
 
 
-import SukiMo2 from "./SukiMo2.jpg";
+import SukiMo2 from "../images/SukiMo2.jpg";
 
 
 function Introduction() {
+    const [hover, setHover] = useState(false);
+
     const containerStyle = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '5rem',
+        padding: '1rem',
         color: '#9C95DC',
+        height: '100vh'
     };
+
+    const topSection = {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        alignItems: 'center',
+        marginTop: '5rem'
+    }
 
     const introTitleStyle = {
-        fontSize: '3rem',
+        fontSize: '5rem',
         color: '#9C95DC',
-        fontFamily: "Merriweather",
+        fontFamily: 'Merriweather',
         padding: '2rem',
+        transform: hover ? 'translateY(-10px)' : 'none',
+        transition: 'transform 0.2s ease-out'
     };
 
+
+
     const introBodyStyle = {
-        fontSize: '1.2rem',
+        fontSize: '2rem',
         color: '#9C95DC',
         fontFamily: "Merriweather",
         marginRight: '6rem'
 
     };
 
-    const introLogoStyle = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        width: '20rem',
-        textDecoration: 'none',
-        color: '#9C95DC',
-    };
-
     const introPhotoStyle = {
         maxWidth: '100%',
-        width: '15rem',
-        height: '15rem',
+        width: '30rem',
+        height: '30rem',
         borderRadius: '50%',
         border: '2px solid #9C95DC',
         alignSelf: 'center',
         margin: '1rem',
     };
 
-    const introTechStyle = {
-        fontSize: '1.3rem',
+    const introLogoText = {
+        fontSize: '3.5rem',
         color: '#9C95DC',
         fontFamily: "Merriweather",
-        padding: '.2rem',
-        marginLeft: '3rem',
+        padding: '.1rem',
+        marginBottom: '1rem',
         textAlign: 'center'
     };
 
+    const logoContainer = {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+
+    }
+
+    const introLogoStyle = {
+        width: '16rem',
+        padding: '1rem',
+        fontSize: '3rem',
+        textDecoration: 'none',
+        color: '#9C95DC',
+    };
+
+    const bottomSection = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        marginTop: '2rem'
+    };
+
+
     return (
         <div style={containerStyle}>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-                <h1 style={introTitleStyle}>Full-Stack Developer</h1>
-                <img src={SukiMo2} alt="SukiMo" style={introPhotoStyle} />
-            </div>
-            <div>
-                <p style={introBodyStyle}>Hi, I am Jeremy and I created my portfolio using React.
-                    <br />I am enrolled in the University of San Diego's Full-Stack Coding Bootcamp.
-                </p>
-                <div style={introTechStyle}> <br />  Tech Stack:
+            <div style={topSection}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
+                    <h1 style={introTitleStyle}>
+                        <span
+                            style={introLogoText}
+                            onMouseEnter={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)}
+                        >
+                            Full-Stack Developer
+                        </span>
+                    </h1>
+                    <p style={introBodyStyle}>Hi, I am Jeremy and I created my portfolio using React.
+                        <br />I am enrolled in the University of San Diego's Full-Stack Coding Bootcamp.
+                    </p>
+
+                </div>
+                <div>
+                    <img src={SukiMo2} alt="SukiMo" style={introPhotoStyle} />
                 </div>
             </div>
+            <div style={bottomSection}>
 
-            <div style={introLogoStyle}>
-                <a href="https://www.w3schools.com/js/" style={introLogoStyle}><IoLogoJavascript /></a>
-                <a href="https://legacy.reactjs.org/docs/getting-started.html" style={introLogoStyle}><FaReact /></a>
-                <a href="https://www.w3schools.com/html/" style={introLogoStyle}><AiFillHtml5 /></a>
-                <a href="https://www.w3schools.com/css/" style={introLogoStyle}><SiCss3 /></a>
-                <a href="https://www.w3schools.com/mongodb/" style={introLogoStyle}><SiMongodb /></a>
-                <a href="https://www.w3schools.com/MySQL/default.asp" style={introLogoStyle}><SiMysql /></a>
+                <div style={introLogoText}> <br />  Tech Stack:
+                </div>
+                <div style={logoContainer}>
+                    <a href="https://www.w3schools.com/js/" style={introLogoStyle}><IoLogoJavascript /></a>
+                    <a href="https://legacy.reactjs.org/docs/getting-started.html" style={introLogoStyle}><FaReact /></a>
+                    <a href="https://www.w3schools.com/html/" style={introLogoStyle}><AiFillHtml5 /></a>
+                    <a href="https://www.w3schools.com/css/" style={introLogoStyle}><SiCss3 /></a>
+                    <a href="https://www.w3schools.com/mongodb/" style={introLogoStyle}><SiMongodb /></a>
+                    <a href="https://www.w3schools.com/MySQL/default.asp" style={introLogoStyle}><SiMysql /></a>
+                </div>
             </div>
         </div>
     );
