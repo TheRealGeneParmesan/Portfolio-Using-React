@@ -24,26 +24,27 @@ function About() {
                         <p className="leading-relaxed m1-md-4" style={paragraphStyle}>
                             I graduated from George Washington University in 2017 with a degree
                             in International Affairs and Global Public Health. I am now finishing the University of San Diego's Full-Stack Coding
-                            Bootcamp. <br></br>
-                            <br></br>I have experience using:
-                            <br></br>
-                            HTML
-                            <br></br>
-                            CSS
-                            <br></br>
-                            JavaScript
-                            <br></br>
-                            Node.js
-                            <br></br>
-                            Express.js
-                            <br></br>
-                            React.js
-                            <br></br>
-                            MySQL
-                            <br></br>
-                            MongoDB
-                            <br></br>
-                            Python
+                            Bootcamp.
+                            <br /><br />
+                            As A Full Stack Developer, I Have Experience With:
+                            <br />
+                            <span>&bull; HTML</span>
+                            <br />
+                            <span>&bull; CSS</span>
+                            <br />
+                            <span>&bull; JavaScript</span>
+                            <br />
+                            <span>&bull; Node.js</span>
+                            <br />
+                            <span>&bull; Express.js</span>
+                            <br />
+                            <span>&bull; React.js</span>
+                            <br />
+                            <span>&bull; MySQL</span>
+                            <br />
+                            <span>&bull; MongoDB</span>
+                            <br />
+                            <span>&bull; Python</span>
                         </p>
                     </div>
                     <div className="photo col-sm-12 col-md-6">
@@ -55,7 +56,7 @@ function About() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 
