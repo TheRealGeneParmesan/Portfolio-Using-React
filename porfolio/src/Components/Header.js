@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header({ scrollTo, aboutRef, portfolioRef }) {
+function Header() {
     const headerStyle = {
         display: 'flex',
         justifyContent: 'space-between',
@@ -8,7 +8,7 @@ function Header({ scrollTo, aboutRef, portfolioRef }) {
     };
 
     const logoStyle = {
-        fontSize: '2rem',
+        fontSize: '3rem',
         textDecoration: 'none',
         color: '#9C95DC',
         fontFamily: "Merriweather",
@@ -18,32 +18,61 @@ function Header({ scrollTo, aboutRef, portfolioRef }) {
         display: 'flex',
         justifyContent: 'center',
         fontFamily: "Merriweather",
-        fontSize: '1.5rem',
+        fontSize: '2rem',
     };
 
     const linkStyle = {
         marginLeft: '2rem',
         textDecoration: 'none',
         color: '#9C95DC',
+        position: 'relative',
     };
 
-    const handleAboutClick = () => {
-        scrollTo(aboutRef);
+    const logoHoverStyle = {
+        color: '#f7971e',
     };
 
-    const handlePortfolioClick = () => {
-        scrollTo(portfolioRef);
+    const aboutLinkHoverStyle = {
+        color: '#3494e6',
+    };
+
+    const projectsLinkHoverStyle = {
+        color: '#b2fefa',
+    };
+
+    const contactLinkHoverStyle = {
+        color: '#a80077',
+    };
+
+    const resumeLinkHoverStyle = {
+        color: '#00f260',
     };
 
     return (
-        <header style={headerStyle}>
-            <a href="#" style={logoStyle}>Jeremy's Portfolio</a>
+        <header id="header" style={headerStyle}>
+            <a href="#header" style={logoStyle}
+                onMouseEnter={(e) => e.target.style.color = logoHoverStyle.color}
+                onMouseLeave={(e) => e.target.style.color = logoStyle.color}>
+                Jeremy's Portfolio
+            </a>
             <nav style={navStyle}>
-                <a href="#" onClick={handleAboutClick} style={linkStyle}>
+                <a href="#about" style={linkStyle}
+                    onMouseEnter={(e) => e.target.style.color = aboutLinkHoverStyle.color}
+                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
                     About Me</a>
-                <a href="#" onClick={handlePortfolioClick} style={linkStyle}>Portfolio</a>
-                <a href="#" style={linkStyle}>Contact</a>
-                <a href="https://drive.google.com/file/d/1e3Zb2WcTcovOG6Jd4n3QcgBsLFgbtDGs/view" style={linkStyle}>Resume</a>
+                <a href="#projects" style={linkStyle}
+                    onMouseEnter={(e) => e.target.style.color = projectsLinkHoverStyle.color}
+                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
+                    Projects</a>
+                <a href="#contact" style={linkStyle}
+                    onMouseEnter={(e) => e.target.style.color = contactLinkHoverStyle.color}
+                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
+                    Contact</a>
+                <a href="https://drive.google.com/file/d/1e3Zb2WcTcovOG6Jd4n3QcgBsLFgbtDGs/view"
+                    style={linkStyle}
+                    onMouseEnter={(e) => e.target.style.color = resumeLinkHoverStyle.color}
+                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
+                    Resume</a>
             </nav>
         </header>
     );
