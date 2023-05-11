@@ -69,11 +69,14 @@ function Introduction() {
                 <h1 style={introTitleStyle}>Full-Stack Developer</h1>
                 <img src={SukiMo2} alt="SukiMo" style={introPhotoStyle} />
             </div>
-            <p style={introBodyStyle}>Hi, I am Jeremy and I created my portfolio using React.
-                <br />I am enrolled in the University of San Diego's Full-Stack Coding Bootcamp.
+            <div>
+                <p style={introBodyStyle}>Hi, I am Jeremy and I created my portfolio using React.
+                    <br />I am enrolled in the University of San Diego's Full-Stack Coding Bootcamp.
+                </p>
                 <div style={introTechStyle}> <br />  Tech Stack:
                 </div>
-            </p>
+            </div>
+
             <div style={introLogoStyle}>
                 <a href="https://www.w3schools.com/js/" style={introLogoStyle}><IoLogoJavascript /></a>
                 <a href="https://legacy.reactjs.org/docs/getting-started.html" style={introLogoStyle}><FaReact /></a>
