@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Using-React/static/css/main.73c8f85e.css",
-    "main.js": "/Portfolio-Using-React/static/js/main.fcf82a18.js",
+    "main.css": "/Portfolio-Using-React/static/css/main.8558899b.css",
+    "main.js": "/Portfolio-Using-React/static/js/main.2b0bae03.js",
     "static/media/Goodgreen.png": "/Portfolio-Using-React/static/media/Goodgreen.9d88d7687512a151a63d.png",
     "static/media/SukiMo2.jpg": "/Portfolio-Using-React/static/media/SukiMo2.df993ae277254b296e9e.jpg",
     "static/media/MusicalChairs.png": "/Portfolio-Using-React/static/media/MusicalChairs.7ced98dafa78c7109480.png",
@@ -11,11 +11,11 @@
     "static/media/Notetaker.png": "/Portfolio-Using-React/static/media/Notetaker.82ee4db3fe4fccfcb4fe.png",
     "static/media/Texteditor.png": "/Portfolio-Using-React/static/media/Texteditor.59ec4d3c79e09c010f2a.png",
     "index.html": "/Portfolio-Using-React/index.html",
-    "main.73c8f85e.css.map": "/Portfolio-Using-React/static/css/main.73c8f85e.css.map",
-    "main.fcf82a18.js.map": "/Portfolio-Using-React/static/js/main.fcf82a18.js.map"
+    "main.8558899b.css.map": "/Portfolio-Using-React/static/css/main.8558899b.css.map",
+    "main.2b0bae03.js.map": "/Portfolio-Using-React/static/js/main.2b0bae03.js.map"
   },
   "entrypoints": [
-    "static/css/main.73c8f85e.css",
-    "static/js/main.fcf82a18.js"
+    "static/css/main.8558899b.css",
+    "static/js/main.2b0bae03.js"
   ]
 }
