@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Using-React/static/css/main.73c8f85e.css",
+    "main.js": "/Portfolio-Using-React/static/js/main.fcf82a18.js",
+    "static/media/Goodgreen.png": "/Portfolio-Using-React/static/media/Goodgreen.9d88d7687512a151a63d.png",
+    "static/media/SukiMo2.jpg": "/Portfolio-Using-React/static/media/SukiMo2.df993ae277254b296e9e.jpg",
+    "static/media/MusicalChairs.png": "/Portfolio-Using-React/static/media/MusicalChairs.7ced98dafa78c7109480.png",
+    "static/media/coffee.jpg": "/Portfolio-Using-React/static/media/coffee.b2d69199a6134e148e84.jpg",
+    "static/media/weatherdashboard.png": "/Portfolio-Using-React/static/media/weatherdashboard.58b2291ddb54654f1035.png",
+    "static/media/WorkdayScheduler.png": "/Portfolio-Using-React/static/media/WorkdayScheduler.c5ef32a78674fbee6002.png",
+    "static/media/Notetaker.png": "/Portfolio-Using-React/static/media/Notetaker.82ee4db3fe4fccfcb4fe.png",
+    "static/media/Texteditor.png": "/Portfolio-Using-React/static/media/Texteditor.59ec4d3c79e09c010f2a.png",
+    "index.html": "/Portfolio-Using-React/index.html",
+    "main.73c8f85e.css.map": "/Portfolio-Using-React/static/css/main.73c8f85e.css.map",
+    "main.fcf82a18.js.map": "/Portfolio-Using-React/static/js/main.fcf82a18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73c8f85e.css",
+    "static/js/main.fcf82a18.js"
+  ]
+}
