@@ -22,7 +22,7 @@ You can find my deployed application here:
 ![image](https://github.com/TheRealGeneParmesan/Portfolio-Using-React/assets/119083185/9cbcc1eb-632a-453a-9304-8b58d932237e)
 
 
-##Description
+## Description
 
 When you load my portfolio you will find a single-page application with a header, an about me section, a section for my projects and a contact form. 
 
