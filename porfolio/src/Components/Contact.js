@@ -34,7 +34,6 @@ function Contact() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // Check if name and email fields are filled out
         if (name === '') {
             setNameError(true);
             return;
@@ -49,7 +48,6 @@ function Contact() {
             setEmailError(false);
         }
 
-        // Send form data to server here
     };
 
     const handleNameChange = (event) => {
@@ -60,7 +58,6 @@ function Contact() {
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
 
-        // Check if email address is valid
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (regex.test(event.target.value)) {
             setEmailError(false);
