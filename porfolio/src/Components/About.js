@@ -11,7 +11,7 @@ function About() {
     };
 
     return (
-        <section id="about" style={{ marginTop: "8rem", marginRight: "8rem" }}>
+        <section id="about" style={{ marginTop: "2rem", marginRight: "8rem" }}>
             <div className="container ml-md-4">
                 <div className="row">
                     <div className="col-sm-12 col-md-6">

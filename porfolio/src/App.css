@@ -1,3 +1,11 @@
+@media only screen and (max-width: 600px) {
+  .intro-title {
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
 #about {
     padding-top: 50px;
     padding-bottom: 50px;

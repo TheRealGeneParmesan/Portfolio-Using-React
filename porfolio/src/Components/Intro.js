@@ -20,7 +20,7 @@ function Introduction() {
         alignItems: 'center',
         padding: '1rem',
         color: '#9C95DC',
-        height: '100vh'
+        height: '100%'
     };
 
     const topSection = {
@@ -46,13 +46,16 @@ function Introduction() {
     const introBodyStyle = {
         fontSize: '2rem',
         color: '#9C95DC',
-        fontFamily: "Merriweather",
-        marginRight: '6rem'
+        fontFamily: 'Merriweather',
+        marginRight: '6rem',
+        maxWidth: '100%',
+        flewGrow: 1,
 
     };
 
     const introPhotoStyle = {
         maxWidth: '100%',
+        maxHeight: '40vh',
         width: '30rem',
         height: '30rem',
         borderRadius: '50%',
@@ -92,6 +95,8 @@ function Introduction() {
         justifyContent: 'center',
         marginTop: '2rem'
     };
+
+
 
 
     return (
