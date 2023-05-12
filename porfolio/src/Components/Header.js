@@ -1,80 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Header() {
-    const headerStyle = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '1rem',
-    };
+    const [showNav, setShowNav] = useState(false);
 
-    const logoStyle = {
-        fontSize: '3rem',
-        textDecoration: 'none',
-        color: '#9C95DC',
-        fontFamily: "Merriweather",
-    };
-
-    const navStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        fontFamily: "Merriweather",
-        fontSize: '2rem',
-    };
-
-    const linkStyle = {
-        marginLeft: '2rem',
-        textDecoration: 'none',
-        color: '#9C95DC',
-        position: 'relative',
-    };
-
-    const logoHoverStyle = {
-        color: '#f7971e',
-    };
-
-    const aboutLinkHoverStyle = {
-        color: '#3494e6',
-    };
-
-    const projectsLinkHoverStyle = {
-        color: '#b2fefa',
-    };
-
-    const contactLinkHoverStyle = {
-        color: '#a80077',
-    };
-
-    const resumeLinkHoverStyle = {
-        color: '#00f260',
+    const handleToggle = () => {
+        setShowNav(!showNav);
     };
 
     return (
-        <header id="header" style={headerStyle}>
-            <a href="#header" style={logoStyle}
-                onMouseEnter={(e) => e.target.style.color = logoHoverStyle.color}
-                onMouseLeave={(e) => e.target.style.color = logoStyle.color}>
+        <nav className="navbar navbar-expand-lg navbar-light bg-white">
+            <a
+                className="navbar-brand"
+                href="/"
+                style={{ color: '#9c95dc', fontSize: '3rem' }}
+                onMouseEnter={(e) => (e.target.style.color = 'turquoise')}
+                onMouseLeave={(e) => (e.target.style.color = '#9C95DC')}
+            >
                 Jeremy's Portfolio
             </a>
-            <nav style={navStyle}>
-                <a href="#about" style={linkStyle}
-                    onMouseEnter={(e) => e.target.style.color = aboutLinkHoverStyle.color}
-                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
-                    About Me</a>
-                <a href="#projects" style={linkStyle}
-                    onMouseEnter={(e) => e.target.style.color = projectsLinkHoverStyle.color}
-                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
-                    Projects</a>
-                <a href="#contact" style={linkStyle}
-                    onMouseEnter={(e) => e.target.style.color = contactLinkHoverStyle.color}
-                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
-                    Contact</a>
-                <a href="https://drive.google.com/file/d/1e3Zb2WcTcovOG6Jd4n3QcgBsLFgbtDGs/view"
-                    style={linkStyle}
-                    onMouseEnter={(e) => e.target.style.color = resumeLinkHoverStyle.color}
-                    onMouseLeave={(e) => e.target.style.color = linkStyle.color}>
-                    Resume</a>
-            </nav>
-        </header>
+            <button
+                className="navbar-toggler"
+                type="button"
+                onClick={handleToggle}
+                aria-controls="navbarMenu"
+                aria-expanded={showNav}
+                aria-label="Toggle navigation"
+            >
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className={`collapse navbar-collapse${showNav ? ' show' : ''}`} id="navbarMenu">
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                        <a
+                            className="nav-link"
+                            href="#about"
+                            onMouseEnter={(e) => (e.target.style.color = '#3494e6')}
+                            onMouseLeave={(e) => (e.target.style.color = '#9C95DC')}
+                        >
+                            About Me
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a
+                            className="nav-link"
+                            href="#projects"
+                            onMouseEnter={(e) => (e.target.style.color = '#b2fefa')}
+                            onMouseLeave={(e) => (e.target.style.color = '#9C95DC')}
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a
+                            className="nav-link"
+                            href="#contact"
+                            onMouseEnter={(e) => (e.target.style.color = '#a80077')}
+                            onMouseLeave={(e) => (e.target.style.color = '#9C95DC')}
+                        >
+                            Contact
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a
+                            className="nav-link"
+                            href="https://drive.google.com/file/d/1e3Zb2WcTcovOG6Jd4n3QcgBsLFgbtDGs/view"
+                            onMouseEnter={(e) => (e.target.style.color = '#00f260')}
+                            onMouseLeave={(e) => (e.target.style.color = '#9C95DC')}
+                        >
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     );
 }
 
