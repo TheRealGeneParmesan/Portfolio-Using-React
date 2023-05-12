@@ -14,6 +14,12 @@ import SukiMo2 from "../images/SukiMo2.jpg";
 function Introduction() {
     const [hover, setHover] = useState(false);
 
+    const mediaQueries = {
+        small: `@media (max-width: 768px)`,
+        medium: `@media (max-width: 992px)`,
+        large: `@media (max-width: 1200px)`,
+    };
+
     const containerStyle = {
         display: 'flex',
         flexDirection: 'column',
@@ -25,18 +31,25 @@ function Introduction() {
 
     const topSection = {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignSelf: 'center',
         alignItems: 'center',
-        marginTop: '5rem'
-    }
+        marginTop: '5rem',
+        [mediaQueries.medium]: {
+            fontSize: '3.5rem',
+        },
+        [mediaQueries.small]: {
+            fontSize: '2.5rem',
+        },
+    };
 
     const introTitleStyle = {
         fontSize: '5rem',
         color: '#9C95DC',
         fontFamily: 'Merriweather',
         padding: '2rem',
+        alignSelf: 'center',
         transform: hover ? 'translateY(-10px)' : 'none',
         transition: 'transform 0.2s ease-out'
     };
@@ -50,7 +63,18 @@ function Introduction() {
         marginRight: '6rem',
         maxWidth: '100%',
         flewGrow: 1,
-
+        textAlign: 'center',
+        marginTop: '2rem',
+        [mediaQueries.medium]: {
+            fontSize: '1.5rem',
+            marginRight: 0,
+        },
+        [mediaQueries.medium]: {
+            maxWidth: '80%',
+        },
+        [mediaQueries.small]: {
+            maxWidth: '100%',
+        },
     };
 
     const introPhotoStyle = {
@@ -62,6 +86,13 @@ function Introduction() {
         border: '2px solid #9C95DC',
         alignSelf: 'center',
         margin: '1rem',
+        [mediaQueries.medium]: {
+            maxWidth: '80%',
+            height: 'auto',
+        },
+        [mediaQueries.small]: {
+            maxWidth: '100%',
+        },
     };
 
     const introLogoText = {
@@ -78,8 +109,13 @@ function Introduction() {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        flexWrap: 'wrap',
+        marginTop: '2rem',
+        [mediaQueries.medium]: {
+            justifyContent: 'center',
+        },
 
-    }
+    };
 
     const introLogoStyle = {
         width: '16rem',
@@ -93,8 +129,11 @@ function Introduction() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        marginTop: '2rem'
+        marginTop: '2rem',
+        textAlign: 'center',
     };
+
+
 
 
 
