@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio-Using-React/static/css/main.8558899b.css",
-    "main.js": "/Portfolio-Using-React/static/js/main.2b0bae03.js",
+    "main.js": "/Portfolio-Using-React/static/js/main.c9fadc3f.js",
+    "static/media/FitnRun.png": "/Portfolio-Using-React/static/media/FitnRun.c9a517f96773d213c42d.png",
+    "static/media/BookSearch.png": "/Portfolio-Using-React/static/media/BookSearch.2c8a280d932850aaf1c1.png",
     "static/media/Goodgreen.png": "/Portfolio-Using-React/static/media/Goodgreen.9d88d7687512a151a63d.png",
     "static/media/SukiMo2.jpg": "/Portfolio-Using-React/static/media/SukiMo2.df993ae277254b296e9e.jpg",
     "static/media/MusicalChairs.png": "/Portfolio-Using-React/static/media/MusicalChairs.7ced98dafa78c7109480.png",
     "static/media/coffee.jpg": "/Portfolio-Using-React/static/media/coffee.b2d69199a6134e148e84.jpg",
     "static/media/weatherdashboard.png": "/Portfolio-Using-React/static/media/weatherdashboard.58b2291ddb54654f1035.png",
     "static/media/WorkdayScheduler.png": "/Portfolio-Using-React/static/media/WorkdayScheduler.c5ef32a78674fbee6002.png",
-    "static/media/Notetaker.png": "/Portfolio-Using-React/static/media/Notetaker.82ee4db3fe4fccfcb4fe.png",
-    "static/media/Texteditor.png": "/Portfolio-Using-React/static/media/Texteditor.59ec4d3c79e09c010f2a.png",
     "index.html": "/Portfolio-Using-React/index.html",
     "main.8558899b.css.map": "/Portfolio-Using-React/static/css/main.8558899b.css.map",
-    "main.2b0bae03.js.map": "/Portfolio-Using-React/static/js/main.2b0bae03.js.map"
+    "main.c9fadc3f.js.map": "/Portfolio-Using-React/static/js/main.c9fadc3f.js.map"
   },
   "entrypoints": [
     "static/css/main.8558899b.css",
-    "static/js/main.2b0bae03.js"
+    "static/js/main.c9fadc3f.js"
   ]
 }
