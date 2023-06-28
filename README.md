@@ -1,4 +1,5 @@
 # Portfolio Using React 
+
 Rebuilding my portfolio using React
 
 ## Table of Contents
@@ -34,10 +35,6 @@ When you click to contact me, there will be a form and if you don't fill out a f
 
 You can find my Linked In and my Github Repo in the footer as well
 
-
-## Tests
-
-I did not utilize unit testing for this project. 
 
 ## Questions
 
