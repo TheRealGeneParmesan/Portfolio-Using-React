@@ -11,16 +11,13 @@ function Footer() {
         fontWeight: 'bold',
         fontFamily: "Merriweather",
         textDecoration: 'none',
-        fontSize: '1rem',
+        fontSize: '2.5rem',
 
     }
     return (
         <footer style={footerStyle}>
             <a href="https://github.com/TheRealGeneParmesan" style={footerStyle}><BsGithub /></a>
             <a href="https://www.linkedin.com/in/gene-parmesan-02b495266/" style={footerStyle}><BsLinkedin /></a>
-            <a href="https://musical-chairs.herokuapp.com/login" style={footerStyle}>Musical-Chairs-Full-Stack-App</a>
-            <a href="#contact" style={footerStyle}>Contact Me</a>
-
         </footer>
     )
 }

@@ -14,94 +14,47 @@ import SukiMo2 from "../images/SukiMo2.jpg";
 function Introduction() {
     const [hover, setHover] = useState(false);
 
-    const mediaQueries = {
-        small: `@media (max-width: 768px)`,
-        medium: `@media (max-width: 992px)`,
-        large: `@media (max-width: 1200px)`,
-    };
-
     const containerStyle = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         padding: '1rem',
         color: '#9C95DC',
-        height: '100%'
-    };
-
-    const topSection = {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignSelf: 'center',
-        alignItems: 'center',
-        marginTop: '5rem',
-        [mediaQueries.medium]: {
-            fontSize: '3.5rem',
-        },
-        [mediaQueries.small]: {
-            fontSize: '2.5rem',
-        },
+        height: '100%',
+        marginTop: '3rem'
     };
 
     const introTitleStyle = {
         fontSize: '5rem',
         color: '#9C95DC',
-        fontFamily: 'Merriweather',
+        fontFamily: 'Oswald',
         padding: '2rem',
-        alignSelf: 'center',
         transform: hover ? 'translateY(-10px)' : 'none',
         transition: 'transform 0.2s ease-out'
     };
 
-
-
     const introBodyStyle = {
         fontSize: '2rem',
         color: '#9C95DC',
-        fontFamily: 'Merriweather',
-        marginRight: '6rem',
-        maxWidth: '100%',
-        flewGrow: 1,
-        textAlign: 'center',
-        marginTop: '2rem',
-        [mediaQueries.medium]: {
-            fontSize: '1.5rem',
-            marginRight: 0,
-        },
-        [mediaQueries.medium]: {
-            maxWidth: '80%',
-        },
-        [mediaQueries.small]: {
-            maxWidth: '100%',
-        },
+        fontFamily: 'Oswald',
     };
 
     const introPhotoStyle = {
         maxWidth: '100%',
-        maxHeight: '40vh',
-        width: '30rem',
-        height: '30rem',
+        maxHeight: '100%',
+        width: '20rem',
+        height: '20rem',
         borderRadius: '50%',
         border: '2px solid #9C95DC',
-        alignSelf: 'center',
-        margin: '1rem',
-        [mediaQueries.medium]: {
-            maxWidth: '80%',
-            height: 'auto',
-        },
-        [mediaQueries.small]: {
-            maxWidth: '100%',
-        },
     };
 
     const introLogoText = {
-        fontSize: '3.5rem',
+        fontSize: '3rem',
+        display: 'flex',
+        justifyContent: 'center',
         color: '#9C95DC',
-        fontFamily: "Merriweather",
+        fontFamily: "Oswald",
         padding: '.1rem',
-        marginBottom: '1rem',
-        textAlign: 'center'
     };
 
     const logoContainer = {
@@ -110,15 +63,10 @@ function Introduction() {
         justifyContent: 'space-between',
         alignItems: 'center',
         flexWrap: 'wrap',
-        marginTop: '2rem',
-        [mediaQueries.medium]: {
-            justifyContent: 'center',
-        },
-
     };
 
     const introLogoStyle = {
-        width: '16rem',
+        width: '15rem',
         padding: '1rem',
         fontSize: '3rem',
         textDecoration: 'none',
@@ -140,26 +88,23 @@ function Introduction() {
 
     return (
         <div style={containerStyle}>
-            <div style={topSection}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
-                    <h1 style={introTitleStyle}>
-                        <span
-                            style={introLogoText}
-                            onMouseEnter={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)}
-                        >
-                            Full-Stack Developer
-                        </span>
-                    </h1>
-                    <p style={introBodyStyle}>Hi, I am Jeremy and I created my portfolio using React.
-                        <br />I am enrolled in the University of San Diego's Full-Stack Coding Bootcamp.
-                    </p>
+            <h1 style={introTitleStyle}>
+                <span
+                    style={introLogoText}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(false)}
+                >
+                    Full-Stack Developer
+                </span>
+            </h1>
+            <p style={introBodyStyle}> Hey, I'm Jeremy. I'm a full-stack developer who enjoys building web applications. I'm currently looking for a full-time position as a developer.
+                <br /> Please feel free to contact me with any questions.
+            </p>
 
-                </div>
-                <div>
-                    <img src={SukiMo2} alt="SukiMo" style={introPhotoStyle} />
-                </div>
+            <div>
+                <img src={SukiMo2} alt="SukiMo" style={introPhotoStyle} />
             </div>
+
             <div style={bottomSection}>
 
                 <div style={introLogoText}> <br />  Tech Stack:

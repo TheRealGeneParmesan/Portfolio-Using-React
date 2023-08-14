@@ -12,7 +12,7 @@ function Header() {
             <a
                 className="navbar-brand"
                 href="/"
-                style={{ color: '#9c95dc', fontSize: '3rem', fontFamily: 'Merriweather', padding: '.1rem', marginLeft: '1rem' }}
+                style={{ color: '#9c95dc', fontSize: '4rem', fontFamily: 'Faster One', padding: '.1rem', marginLeft: '1rem' }}
                 onMouseEnter={(e) => (e.target.style.color = 'turquoise')}
                 onMouseLeave={(e) => (e.target.style.color = '#9C95DC')}
             >

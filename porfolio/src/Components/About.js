@@ -2,11 +2,15 @@ import React from "react";
 import coffee from "../images/coffee.jpg";
 
 function About() {
-    const titleStyle = { color: "#9C95DC" };
+    const titleStyle = {
+        color: "#9C95DC",
+        fontFamily: "Oswald",
+        fontSize: "3rem",
+    };
 
     const paragraphStyle = {
         color: "#9C95DC",
-        fontFamily: "Merriweather",
+        fontFamily: "Oswald",
         fontSize: "1.5rem",
     };
 
@@ -23,10 +27,10 @@ function About() {
                         </h1>
                         <p className="leading-relaxed m1-md-4" style={paragraphStyle}>
                             I graduated from George Washington University in 2017 with a degree
-                            in International Affairs and Global Public Health. I am now finishing the University of San Diego's Full-Stack Coding
-                            Bootcamp.
+                            in International Affairs and Global Public Health. I completed the University of San Diego's Full-Stack Coding
+                            Bootcamp program with my certification in June of 2023.
                             <br /><br />
-                            As A Full Stack Developer, I Have Experience With:
+                            As A Full Stack Developer, I Work With:
                             <br />
                             <span>&bull; HTML</span>
                             <br />
